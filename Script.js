@@ -17,9 +17,9 @@ function loadData(records = []) {
 		table_data += `<td>${records[i].progress}</td>`;
 		table_data += `<td>${records[i].contact}</td>`;
 		table_data += `<td>`;
-		table_data += `<a href="edit.html?id=${records[i]._id}"><button class="btn btn-primary">Edit</button></a>`;
+		table_data += `<a href="edit.html?id=${records[i]._id}"><button class="btn"><i class="fa fa-edit" ></i></button></a>`;
 		table_data += '&nbsp;&nbsp;';
-		table_data += `<button class="btn btn-danger" onclick=deleteData('${records[i]._id}')>Delete</button>`;
+		table_data += `<button class="btn" onclick=deleteData('${records[i]._id}')><i class="fa fa-trash" ></i></button>`;
 		table_data += `</td>`;
 		table_data += `</tr>`;
 	}
