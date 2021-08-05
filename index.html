@@ -1,52 +1,102 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<!--www.codingflicks.com-->
+<html lang="en">
 <head>
-    <title>DMA Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Food Restaurant Order API</title>
 </head>
-<body class="d-flex flex-column h-100 container">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Listing</a>
-                        <a class="nav-link" href="add.html">Add New</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <table class="table table-striped table-hover text-center">
-        <thead>
-        <th>OrderId</th>
-        <th>Name</th>
-        <th>Area</th>
-        <th>City</th>
-        <th>Pincode</th>
-        <th>Dish</th>
-        <th>Deliver Time</th>
-        <th>Status</th>
-        <th>Progress</th>
-        <th>Contact</th>
-        <th>Action</th>
-        </thead>
-        <tbody id="tbody">
-        </tbody>
-        <tfoot>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-        </tfoot>
-    </table>
+        body {
+            font-family: poppins;
+            font-size: 16px;
+            color: black;
+        }
 
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container text-center">
-            <span class="text-muted">right &copy; 2021</span>
-        </div>
-    </footer>
+        .form-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: auto auto;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 500px;
+            height: 250px;
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        }
+
+
+                .form-box:before {
+                background-image: url("1.jpg");
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                content: "";
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                display: block;
+                filter: blur(2px);
+            }
+
+            .form-box .header-text {
+                font-size: 32px;
+                font-weight: 600;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+
+      
+
+     
+            
+            .form-box button {
+                background-color: deepskyblue;
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+                padding: 10px;
+                margin: 20px 0px;
+            }
+                .form-box button:hover {
+                    background-color: skyblue;
+                    color: #fff;
+                    border: dotted;
+                    border-block-color:aquamarine;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 10px;
+                    margin: 20px 0px;
+                }
+
+    </style>
+    <div class="form-box">
+        <div class="header-text">
+          !--Welcome to our Food API--!
+        </div> <button type="submit" onclick="index1()">Click Here To Enter!</button>
+    </div>
+    <script>
+        function index1() {
+            window.location.href = 'index1.html';
+        }
+    </script>
 </body>
-<script src="script.js"></script>
-<script>
-		getData();
-</script>
-</html>Copy
+<
+</html>
